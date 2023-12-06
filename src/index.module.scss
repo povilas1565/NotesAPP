@@ -1,0 +1,19 @@
+@import './global.modules.scss';
+
+
+html, body, body>#root, section, main {
+    height: 100%;
+    background-color: $bg;
+}
+html {
+    overflow-y: scroll;
+}
+body {
+    padding: 0%;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}

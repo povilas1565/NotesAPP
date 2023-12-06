@@ -1,0 +1,36 @@
+@import '../../global.modules.scss';
+
+%cut {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.block {
+    height: 4*$unit;
+    width: 240px;
+    padding: $unit 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: $borderForSidebar;
+    margin: 0;
+    &.selected {
+        background: linear-gradient(to bottom, #ffffff 0%, #dfe0de 100%) !important;
+    }
+    .title {
+        font-weight: 600;
+        @extend %cut;
+    }
+    .snippet {
+        display: flex;
+        font-size: smaller;        
+        .date {
+            font-weight: 400;
+            padding-right: 10px;
+        }
+        .body {
+            @extend %cut;
+        }
+    }
+}
